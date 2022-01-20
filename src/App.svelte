@@ -7,7 +7,11 @@
 		isAfter,
 		setHours,
 		differenceInHours,
+		format,
 	} from "date-fns";
+	import svLocale from "date-fns/locale/sv";
+
+	let nextDevFriday;
 
 	function countdown(): number {
 		const curr = new Date();
@@ -19,6 +23,9 @@
 			firstFriday = getFirstFriday(nextMonth);
 		}
 
+		nextDevFriday = format(firstFriday, "do MMMM yyyy", {
+			locale: svLocale,
+		});
 		return getHours(firstFriday);
 	}
 
@@ -39,6 +46,7 @@
 <main>
 	<h3>Devfredag om:</h3>
 	<h1>{countdown()} timmar</h1>
+	<h3>{nextDevFriday}</h3>
 </main>
 
 <style>
