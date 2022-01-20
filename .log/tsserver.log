@@ -1,0 +1,42 @@
+Info 0    [09:46:47.469] Starting TS Server
+Info 1    [09:46:47.469] Version: 4.5.4
+Info 2    [09:46:47.469] Arguments: /home/olin/.nvm/versions/node/v15.8.0/bin/node /home/olin/code/devfredag/node_modules/.bin/tsserver --logFile /home/olin/code/devfredag/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/b61fff3dcbf9453c6a8ea55acd2c748b/tscancellation*
+Info 3    [09:46:47.469] Platform: linux NodeVersion: 15 CaseSensitive: true
+Info 4    [09:46:47.469] ServerMode: undefined syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [09:46:47.484] Search path: /home/olin/code/devfredag/src
+Info 6    [09:46:47.485] For info: /home/olin/code/devfredag/src/main.ts :: Config file name: /home/olin/code/devfredag/tsconfig.json
+Info 7    [09:46:47.485] Creating configuration project /home/olin/code/devfredag/tsconfig.json
+Info 8    [09:46:47.503] Config: /home/olin/code/devfredag/tsconfig.json : {
+ "rootNames": [
+  "/home/olin/code/devfredag/src/global.d.ts",
+  "/home/olin/code/devfredag/src/main.ts"
+ ],
+ "options": {
+  "moduleResolution": 2,
+  "target": 4,
+  "importsNotUsedAsValues": 2,
+  "isolatedModules": true,
+  "sourceMap": true,
+  "strict": false,
+  "esModuleInterop": true,
+  "skipLibCheck": true,
+  "forceConsistentCasingInFileNames": true,
+  "configFilePath": "/home/olin/code/devfredag/tsconfig.json"
+ }
+}
+Info 9    [09:46:47.515] Starting updateGraphWorker: Project: /home/olin/code/devfredag/tsconfig.json
+Info 10   [09:46:48.512] Finishing updateGraphWorker: Project: /home/olin/code/devfredag/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 997.0629659891129ms
+Info 11   [09:46:48.512] Project '/home/olin/code/devfredag/tsconfig.json' (Configured)
+Info 12   [09:46:48.512] 	Files (123)
+
+Info 13   [09:46:48.513] -----------------------------------------------
+Info 14   [09:46:52.059] Starting updateGraphWorker: Project: /home/olin/code/devfredag/tsconfig.json
+Info 15   [09:46:52.090] Finishing updateGraphWorker: Project: /home/olin/code/devfredag/tsconfig.json Version: 2 structureChanged: false structureIsReused:: Completely Elapsed: 30.936661958694458ms
+Info 16   [09:46:52.090] Different program with same set of files
+Info 17   [09:46:52.812] Format host information updated
+Info 18   [09:46:53.011] Starting updateGraphWorker: Project: /home/olin/code/devfredag/tsconfig.json
+Info 19   [09:46:53.016] Finishing updateGraphWorker: Project: /home/olin/code/devfredag/tsconfig.json Version: 3 structureChanged: false structureIsReused:: Completely Elapsed: 4.306652069091797ms
+Info 20   [09:46:53.016] Different program with same set of files
+Info 21   [09:46:53.348] Starting updateGraphWorker: Project: /home/olin/code/devfredag/tsconfig.json
+Info 22   [09:46:53.373] Finishing updateGraphWorker: Project: /home/olin/code/devfredag/tsconfig.json Version: 4 structureChanged: false structureIsReused:: Completely Elapsed: 24.41424298286438ms
+Info 23   [09:46:53.373] Different program with same set of files
