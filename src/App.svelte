@@ -44,9 +44,26 @@
 </script>
 
 <main>
-	<h3>Devfredag om:</h3>
-	<h1>{countdown()} timmar</h1>
-	<h3>{nextDevFriday}</h3>
+	{#if countdown() === 72}
+		<h2>Dawn of</h2>
+		<h3>The Third Day:</h3>
+		<h1>-{countdown()} Hours Remain-</h1>
+		<h3>{nextDevFriday}</h3>
+	{:else if countdown() === 48}
+		<h2>Dawn of</h2>
+		<h3>The Second Day:</h3>
+		<h1>-{countdown()} Hours Remain-</h1>
+		<h3>{nextDevFriday}</h3>
+	{:else if countdown() === 24}
+		<h2>Dawn of</h2>
+		<h3>The Final Day:</h3>
+		<h1>-{countdown()} Hours Remain-</h1>
+		<h3>{nextDevFriday}</h3>
+	{:else}
+		<h3>Devfredag om:</h3>
+		<h1>{countdown()} timmar</h1>
+		<h3>{nextDevFriday}</h3>
+	{/if}
 </main>
 
 <style>
@@ -58,6 +75,7 @@
 	}
 
 	h1,
+	h2,
 	h3 {
 		color: #ff3e00;
 		text-transform: uppercase;
@@ -68,9 +86,16 @@
 		font-weight: 100;
 	}
 
+	h2 {
+		font-size: 1.5em;
+		font-weight: 100;
+		margin-bottom: 0px;
+	}
+
 	h3 {
 		font-size: 2em;
 		font-weight: 300;
+		margin-top: 0px;
 	}
 
 	@media (min-width: 640px) {
